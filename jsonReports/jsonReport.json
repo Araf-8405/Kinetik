@@ -1,0 +1,201 @@
+{
+  "config": {
+    "configFile": "F:\\Kinetik\\playwright.config.ts",
+    "rootDir": "F:/Kinetik",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1,
+      "totalTime": 162092.9919999838
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "F:\\Kinetik\\My-Reporter.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "F:/Kinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome:latest:MacOS Catalina@lambdatest",
+        "name": "chrome:latest:MacOS Catalina@lambdatest",
+        "testDir": "F:/Kinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCartRegistrationpage.test.ts"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "F:/Kinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome:latest:Windows 10@lambdatest",
+        "name": "chrome:latest:Windows 10@lambdatest",
+        "testDir": "F:/Kinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCartRegistrationpage.test.ts"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "F:/Kinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "F:/Kinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCartRegistrationpage.test.ts"
+        ],
+        "timeout": 180000
+      },
+      {
+        "outputDir": "F:/Kinetik/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "F:/Kinetik",
+        "testIgnore": [],
+        "testMatch": [
+          "addToCartRegistrationpage.test.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\addToCartRegistrationpage.test.ts",
+      "file": "tests/addToCartRegistrationpage.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "verify that a order successfully  placed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 159911,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Navigate to Home Screen",
+                      "duration": 2704
+                    },
+                    {
+                      "title": "Verify Successfully navigate to Home Screen & Add to cart a product",
+                      "duration": 15434
+                    },
+                    {
+                      "title": "Verify Successfully navigate to Cart Screen & Add to cart a product",
+                      "duration": 7208
+                    },
+                    {
+                      "title": "Goto Regitration page",
+                      "duration": 17027
+                    },
+                    {
+                      "title": "ENTER ACCOUNT INFORMATION",
+                      "duration": 31029
+                    },
+                    {
+                      "title": "account crated page",
+                      "duration": 8228
+                    },
+                    {
+                      "title": "Go to home page again",
+                      "duration": 38541
+                    },
+                    {
+                      "title": "Go to Checkout page & Verify adress & Order item",
+                      "duration": 14423
+                    },
+                    {
+                      "title": "Make payment & Place Order",
+                      "duration": 16014
+                    },
+                    {
+                      "title": "Verify Order is Successfully placed",
+                      "duration": 3094
+                    }
+                  ],
+                  "startTime": "2024-01-20T10:23:36.570Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "F:\\Kinetik\\test-results\\tests-addToCartRegistrationpage-verify-that-a-order-successfully-placed-chrome\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "F:\\Kinetik\\test-results\\tests-addToCartRegistrationpage-verify-that-a-order-successfully-placed-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3fbd2231978dc6cc581d-73b2b0bd8bc5f308b14b",
+          "file": "tests/addToCartRegistrationpage.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
